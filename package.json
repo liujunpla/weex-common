@@ -1,0 +1,29 @@
+{
+  "name": "weex-common",
+  "version": "1.0.0",
+  "description": "10000社区Weex项目公用模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liujunpla/weex-common.git"
+  },
+  "keywords": [
+    "10000",
+    "weex",
+    "common"
+  ],
+  "author": "刘军",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liujunpla/weex-common/issues"
+  },
+  "homepage": "https://github.com/liujunpla/weex-common#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3"
+  }
+}
