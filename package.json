@@ -3,36 +3,22 @@
   "version": "1.0.0",
   "description": "10000社区Weex项目公用模块",
   "main": "index.js",
-  "lib": "vue",
-  "type": "weex",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liujunpla/weex-common.git"
   },
-  "homepage": "https://github.com/liujunpla/weex-common/",
+  "keywords": [
+    "10000",
+    "weex",
+    "common"
+  ],
+  "author": "刘军",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/liujunpla/weex-common/issues"
   },
-  "keywords": [
-    "weex",
-    "vue",
-    "dxwt",
-    "javascript",
-    "android",
-    "ios"
-  ],
-  "config": {
-    "cacheKey": "views/phone/phoneRouter.js",
-    "bundleJS": "./dist/index.weex.js",
-    "fileCache": "../launch/dist/fileCache.txt",
-    "bossJson": "../launch/dist/boss.json"
-  },
-  "scripts": {
-  },
-  "author": "dxwt",
-  "license": "MIT",
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/liujunpla/weex-common#readme",
 }
