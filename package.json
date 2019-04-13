@@ -3,27 +3,76 @@
   "version": "1.0.0",
   "description": "10000社区Weex项目公用模块",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "lib": "vue",
+  "type": "weex",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liujunpla/weex-common.git"
   },
-  "keywords": [
-    "10000",
-    "weex",
-    "common"
-  ],
-  "author": "刘军",
-  "license": "ISC",
+  "homepage": "https://github.com/liujunpla/weex-common/",
   "bugs": {
     "url": "https://github.com/liujunpla/weex-common/issues"
   },
-  "homepage": "https://github.com/liujunpla/weex-common#readme",
+  "keywords": [
+    "weex",
+    "vue",
+    "dxwt",
+    "javascript",
+    "android",
+    "ios"
+  ],
+  "config": {
+    "cacheKey": "views/phone/phoneRouter.js",
+    "bundleJS": "./dist/index.weex.js",
+    "fileCache": "../launch/dist/fileCache.txt",
+    "bossJson": "../launch/dist/boss.json"
+  },
+  "scripts": {
+    "build": "npm run build:entry && webpack --env.NODE_ENV=production",
+    "build:entry": "node bin/build-entry.js",
+    "debug": "npm run build:entry && webpack --env.NODE_ENV=development",
+    "dev": "npm run build:entry && webpack --env.NODE_ENV=development --watch",
+    "copy:android": "cp dist/index.weex.js android/app/src/main/assets/index.js",
+    "copy:ios": "cp dist/index.weex.js ios/assets/index.js",
+    "copy": "npm run copy:android && npm run copy:ios",
+    "serve": "anywhere -d build/example/ -p 10003",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "author": "dxwt",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "echarts": "^4.2.0-rc.2",
+    "native-echarts": "^0.4.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0",
+    "weex-vue-render": "^0.12.32"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.4.3"
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "anywhere": "^1.5.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^1.0.1",
+    "jest": "^24.7.1",
+    "request": "^2.88.0",
+    "serve": "^10.1.1",
+    "uppercamelcase": "^3.0.0",
+    "vue-lazyload": "^1.2.6",
+    "vue-loader": "^10.0.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^3.12.0",
+    "webpack-uglify-parallel": "^0.1.4",
+    "weex-loader": "^0.4.4"
   }
 }

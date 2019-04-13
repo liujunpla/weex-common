@@ -1,0 +1,151 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 边框 */
+
+.border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-color: #d7d7d7;
+}
+
+.border-top {
+    border-top-width: 1px;
+    border-top-color: #d7d7d7;
+}
+
+.border-right {
+    border-right-width: 1px;
+    border-right-color: #d7d7d7;
+}
+
+.border-left {
+    border-left-width: 1px;
+    border-left-color: #d7d7d7;
+}
+
+.border-blue {
+    border-width: 1px;
+    border-color: #27B5E8;
+}
+
+.border-white {
+    border-width: 1px;
+    border-color: #fff;
+}
+
+.border-grey {
+    border-width: 1px;
+    border-color: #ddd;
+}
+
+
+
+/* 布局划分 */
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-row-center {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row-top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-row-top-top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-row-between {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row-end {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.match-parent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.match-parent-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.match-parent-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    border-width: 1px;
+    border-color: #f2f2f2;
+}
+
+.divider-line {
+    width: 750px;
+    height: 20px;
+    background-color: #f8f8f8;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line-to-left {
+    flex: 1;
+    height: 3px;
+    background-image: linear-gradient(to left, #E5E8EC, #FFFFFF);
+}
+
+.line-to-right {
+    flex: 1;
+    height: 3px;
+    background-image: linear-gradient(to right, #E5E8EC, #FFFFFF);
+}
